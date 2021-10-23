@@ -11,6 +11,6 @@ class MainViewModel(private val msgUseCase: MessageUseCase): ViewModel() {
     val message: LiveData<MessageEntity> = _message
 
     fun setName(name: String) {
-        _message.value = msgUseCase.getMessage(name)
+        _message.value = msgUseCase.getMessage(name) // memanggil fungi sesuai kebutuhan, gk terikat sama abstrack/interface secara lansung
     }
 }
