@@ -1,5 +1,6 @@
 package myid.pangperhebat.mysimplecleanarchitecture.domain
 
+// Class untuk Usecase
 class MessageInteractor(private val messageRepository: IMessageRepository): MessageUseCase {
 
     override fun getMessage(name: String): MessageEntity {
